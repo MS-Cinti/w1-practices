@@ -1,24 +1,75 @@
-body{
-    padding: 0;
+* {
     margin: 0;
-}
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(245, 241, 35);
-    color: rgb(122, 111, 111);
-}
-h1{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  a img {
+    border: none;
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button,
+  textarea,
+  select {
+    appearance: none !important;
+    border-radius: 0;
+  }
+
+/*end of css reset*/
+
+a{
+    display: grid;
+    font-size: 60px;
+    width: 400px;
+    height: 200px;
+    background-color: red;
+    padding: 10px;
+    margin: 20px;
+    border: 20px solid black;
+    border-radius: 100px;
 }
 
-p{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
+h1 {
+    font-size: 10px;
 }
 
+section h1 {
+    font-size: 10px;
+}
+
+
+.myFirstClass {
+    background-color: blue;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.mySecondClass{
+    font-size: 80px;
+}
+
+p.mySecondClass{
+    letter-spacing: 0.6em;
+}
+
+#root {
+    background-color: tomato;
+}
