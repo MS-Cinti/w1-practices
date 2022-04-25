@@ -44,7 +44,7 @@ function loadEvent() {
 
     const root = document.querySelector("#root")
 
-    for (const frontendStudent of data) {
+/*     for (const frontendStudent of data) {
         root.insertAdjacentHTML("beforeend", `
             <section>
                 <h1>${frontendStudent.name}</h1>
@@ -52,5 +52,15 @@ function loadEvent() {
             </section>  
         `)
     }
+ */
+    //map() for loop helyett:
+    data.map(frontendStudent => {
+        root.insertAdjacentHTML("beforeend", `
+            <section>
+                <h1>${frontendStudent.name}</h1>
+                <p>${frontendStudent.favouriteFood}</p>
+            </section>  
+        `)
+    })
 }
 window.addEventListener("load", loadEvent);
