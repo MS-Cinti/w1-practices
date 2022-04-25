@@ -10,16 +10,27 @@ async function loadEvent() {
 
         //console.log(countryArr[0].name.common)
 
-        for (const country of countryArr) {
+        /*for (const country of countryArr) {
             root.insertAdjacentHTML("beforeend", `
             <section>
                 <h1>${country.name.common}</h1>
                 <p>${country.region}</p>
             </section>
-        `)
+        `)*/
 
-            //console.log(country.name.common);
-        }
+        //map-re átírva:
+        countryArr.map(country => {
+            root.insertAdjacentHTML("beforeend", `
+            <section>
+                <h1>${country.name.common}</h1>
+                <p>${country.region}</p>
+            </section>`
+        )
+        })
+        
 
+        //console.log(country.name.common);
     }
+
+    
 window.addEventListener("load", loadEvent);
